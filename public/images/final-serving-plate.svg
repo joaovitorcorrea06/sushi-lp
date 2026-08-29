@@ -1,0 +1,48 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="transparent"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="602" cy="664" rx="332" ry="72" fill="#000000" fill-opacity="0.42"/>
+  </g>
+  <ellipse cx="600" cy="612" rx="316" ry="104" fill="url(#plateOuter)"/>
+  <ellipse cx="600" cy="596" rx="270" ry="78" fill="url(#plateInner)"/>
+  <ellipse cx="600" cy="584" rx="182" ry="34" fill="url(#plateWell)"/>
+  <path d="M858 546C914 560 958 592 978 632" stroke="url(#rimGlow)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M354 546C298 560 254 592 234 632" stroke="#0D1016" stroke-width="8" stroke-linecap="round" opacity="0.68"/>
+  <ellipse cx="396" cy="500" rx="118" ry="84" fill="url(#leftGlow)"/>
+  <ellipse cx="868" cy="462" rx="158" ry="112" fill="url(#rightGlow)"/>
+  <ellipse cx="760" cy="584" rx="86" ry="18" fill="#F49B38" fill-opacity="0.12"/>
+  <defs>
+    <filter id="shadow" x="180" y="502" width="844" height="324" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="45" result="effect1_foregroundBlur"/>
+    </filter>
+    <radialGradient id="plateOuter" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 560) rotate(90) scale(156 404)">
+      <stop stop-color="#252931"/>
+      <stop offset="0.58" stop-color="#171B22"/>
+      <stop offset="1" stop-color="#0E1117"/>
+    </radialGradient>
+    <radialGradient id="plateInner" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(604 570) rotate(90) scale(126 330)">
+      <stop stop-color="#2E333D"/>
+      <stop offset="0.72" stop-color="#1A1E25"/>
+      <stop offset="1" stop-color="#12161C"/>
+    </radialGradient>
+    <radialGradient id="plateWell" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 576) rotate(90) scale(52 214)">
+      <stop stop-color="#3D434E" stop-opacity="0.92"/>
+      <stop offset="0.52" stop-color="#262B34"/>
+      <stop offset="1" stop-color="#171B22"/>
+    </radialGradient>
+    <linearGradient id="rimGlow" x1="858" y1="546" x2="978" y2="632" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE0B8" stop-opacity="0.56"/>
+      <stop offset="1" stop-color="#F49B38" stop-opacity="0.14"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(396 500) rotate(90) scale(84 118)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(868 462) rotate(90) scale(112 158)">
+      <stop stop-color="#F49B38" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#F49B38" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

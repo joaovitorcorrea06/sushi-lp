@@ -1,0 +1,20 @@
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1000" fill="#090A0C"/>
+  <ellipse cx="242" cy="180" rx="224" ry="160" fill="url(#paint0_radial)"/>
+  <rect x="140" y="150" width="1120" height="700" rx="62" fill="#13151A"/>
+  <ellipse cx="698" cy="634" rx="412" ry="120" fill="#1B1F26"/>
+  <ellipse cx="698" cy="620" rx="356" ry="92" fill="#232833"/>
+  <rect x="382" y="372" width="632" height="52" rx="26" fill="#F0E7D9"/>
+  <rect x="432" y="450" width="208" height="32" rx="16" fill="#2A2E37"/>
+  <rect x="750" y="450" width="208" height="32" rx="16" fill="#2A2E37"/>
+  <circle cx="514" cy="600" r="88" fill="#101215"/>
+  <circle cx="514" cy="600" r="62" fill="#FF8756"/>
+  <circle cx="884" cy="600" r="88" fill="#101215"/>
+  <circle cx="884" cy="600" r="62" fill="#FF9F62"/>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242 180) rotate(90) scale(160 224)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

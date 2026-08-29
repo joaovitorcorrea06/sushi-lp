@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Manrope", sans-serif;
+}
+
+:root {
+  --color-bg: #050607;
+  --color-bg-soft: #101116;
+  --color-card: rgba(255, 255, 255, 0.04);
+  --color-cream: #f5ede1;
+  --color-ink: #090a0c;
+  --color-accent: #f49b38;
+  --color-accent-soft: #ffb76d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(244, 155, 56, 0.08), transparent 22%),
+    linear-gradient(180deg, #050607 0%, #08090c 48%, #050607 100%);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(244, 155, 56, 0.28);
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
