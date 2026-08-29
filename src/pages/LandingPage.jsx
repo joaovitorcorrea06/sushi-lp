@@ -21,6 +21,8 @@ const HeroScene = lazy(async () => {
   return { default: module.HeroScene };
 });
 
+const brandLogoSrc = "/images/tayio%20logo.jpg";
+
 function SectionEyebrow({ children }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)] backdrop-blur-xl">
@@ -76,6 +78,26 @@ function HeroSceneFallback() {
       <div className="absolute bottom-7 left-0 text-[0.64rem] uppercase tracking-[0.28em] text-white/45">
         Preparando cena 3D
       </div>
+    </div>
+  );
+}
+
+function BrandSignature({ label, compact = false }) {
+  return (
+    <div className={cn("flex items-center gap-3", compact && "gap-2.5")}>
+      <img
+        src={brandLogoSrc}
+        alt="Logo Taiyo Sushi Lounge"
+        width={compact ? 34 : 40}
+        height={compact ? 34 : 40}
+        className={cn(
+          "shrink-0 rounded-xl border border-white/12 object-cover shadow-[0_12px_30px_rgba(0,0,0,0.28)]",
+          compact ? "size-[2.125rem]" : "size-10",
+        )}
+      />
+      <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-white/42">
+        {label}
+      </p>
     </div>
   );
 }
@@ -271,9 +293,7 @@ export function LandingPage() {
                 <div className="space-y-5">
                   {/* <SectionEyebrow>{content.eyebrow}</SectionEyebrow> */}
                   <div className="space-y-6">
-                    <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-white/42">
-                      {content.brand}
-                    </p>
+                    <BrandSignature label={content.brand} />
                     <h1 className="max-w-[12ch] text-balance font-display text-[clamp(4rem,6.25vw,6.8rem)] leading-[0.88] tracking-[-0.05em] text-[var(--color-cream)]">
                       {content.heroTitle}
                     </h1>
@@ -359,9 +379,7 @@ export function LandingPage() {
               <div className="space-y-5">
                 <SectionEyebrow>{content.eyebrow}</SectionEyebrow>
                 <div className="space-y-5">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-white/42">
-                    {content.brand}
-                  </p>
+                  <BrandSignature label={content.brand} compact />
                   <h1 className="max-w-[11ch] text-balance font-display text-[clamp(3.2rem,12vw,5rem)] leading-[0.9] tracking-[-0.05em] text-[var(--color-cream)]">
                     {content.heroTitle}
                   </h1>
