@@ -21,8 +21,6 @@ const HeroScene = lazy(async () => {
   return { default: module.HeroScene };
 });
 
-const brandLogoSrc = "/images/tayio%20logo.jpg";
-
 function SectionEyebrow({ children }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)] backdrop-blur-xl">
@@ -85,16 +83,15 @@ function HeroSceneFallback() {
 function BrandSignature({ label, compact = false }) {
   return (
     <div className={cn("flex items-center gap-3", compact && "gap-2.5")}>
-      <img
-        src={brandLogoSrc}
-        alt="Logo Taiyo Sushi Lounge"
-        width={compact ? 34 : 40}
-        height={compact ? 34 : 40}
+      <div
+        aria-hidden="true"
         className={cn(
-          "shrink-0 rounded-xl border border-white/12 object-cover shadow-[0_12px_30px_rgba(0,0,0,0.28)]",
+          "grid place-items-center rounded-xl border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(244,155,56,0.14))] text-[var(--color-accent)] shadow-[0_12px_30px_rgba(0,0,0,0.28)]",
           compact ? "size-[2.125rem]" : "size-10",
         )}
-      />
+      >
+        <Sparkles className={cn("opacity-90", compact ? "size-3.5" : "size-4")} />
+      </div>
       <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-white/42">
         {label}
       </p>
@@ -152,6 +149,10 @@ function StoryBackdrop({
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_16%,rgba(2,3,4,0.12)_60%,rgba(2,3,4,0.4)_100%)]" />
     </div>
   );
+}
+
+function getAnchorProps(href) {
+  return href.startsWith("#") ? {} : { target: "_blank", rel: "noreferrer" };
 }
 
 function SequenceFeatureCard({
@@ -237,6 +238,9 @@ export function LandingPage() {
   const sequenceRef = useRef(null);
   const reducedMotion = useReducedMotion();
   const content = landingContent;
+  const primaryCtaProps = getAnchorProps(content.primaryCta.href);
+  const contactWhatsappProps = getAnchorProps(content.contact.whatsappHref);
+  const contactMapsProps = getAnchorProps(content.contact.mapsHref);
 
   const menuCards = useMemo(() => content.signatureMenu, [content.signatureMenu]);
 
@@ -306,7 +310,7 @@ export function LandingPage() {
                 <div className="space-y-6">
                   <div className="flex flex-wrap gap-3">
                     <Button asChild size="lg">
-                      <a href={content.primaryCta.href} target="_blank" rel="noreferrer">
+                      <a href={content.primaryCta.href} {...primaryCtaProps}>
                         <MessageCircle className="size-4" />
                         {content.primaryCta.label}
                       </a>
@@ -391,7 +395,7 @@ export function LandingPage() {
 
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg">
-                  <a href={content.primaryCta.href} target="_blank" rel="noreferrer">
+                  <a href={content.primaryCta.href} {...primaryCtaProps}>
                     <MessageCircle className="size-4" />
                     {content.primaryCta.label}
                   </a>
@@ -472,9 +476,9 @@ export function LandingPage() {
 
           <FadeBlock delay={0.2}>
             <Button asChild size="lg">
-              <a href={content.primaryCta.href} target="_blank" rel="noreferrer">
+              <a href={content.primaryCta.href} {...primaryCtaProps}>
                 <MessageCircle className="size-4" />
-                Garantir reserva
+                {content.primaryCta.label}
               </a>
             </Button>
           </FadeBlock>
@@ -711,13 +715,13 @@ export function LandingPage() {
               />
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button asChild size="lg">
-                  <a href={content.contact.whatsappHref} target="_blank" rel="noreferrer">
+                  <a href={content.contact.whatsappHref} {...contactWhatsappProps}>
                     <MessageCircle className="size-4" />
                     {content.contact.whatsappLabel}
                   </a>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <a href={content.contact.mapsHref} target="_blank" rel="noreferrer">
+                  <a href={content.contact.mapsHref} {...contactMapsProps}>
                     <MapPin className="size-4" />
                     Ver localizacao
                   </a>

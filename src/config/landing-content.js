@@ -1,32 +1,32 @@
 export const landingContent = {
-  brand: "Taiyo Sushi Lounge",
-  eyebrow: "Sequencia premium em Icara",
+  brand: "Sushi Lounge",
+  eyebrow: "Template premium personalizavel",
   heroTitle: "Uma noite de sushi feita para impressionar do primeiro olhar a ultima peca.",
   heroBody:
-    "Experiencia premium com apresentacao marcante, clima intimista e atendimento pensado para transformar a reserva em ocasiao.",
+    "Base premium para apresentar experiencia, atmosfera e diferenciais do restaurante com linguagem sofisticada e visual marcante.",
   primaryCta: {
-    label: "Reservar no WhatsApp",
-    href: "https://wa.me/5548991120993?text=Ola%2C%20quero%20reservar%20uma%20mesa%20no%20Taiyo%20Sushi%20Lounge.",
+    label: "Explorar a experiencia",
+    href: "#sequencia",
   },
   secondaryCta: {
     label: "Explorar a sequencia",
     href: "#sequencia",
   },
   proofItems: [
-    { label: "Google", value: "4.8 / 5" },
-    { label: "Faixa de consumo", value: "R$ 100 a R$ 200" },
-    { label: "Localizacao", value: "Icara, SC" },
+    { label: "Formato", value: "Template white-label" },
+    { label: "Servico", value: "Reserva, delivery e retirada" },
+    { label: "Localizacao", value: "Personalize para sua cidade" },
     { label: "Atmosfera", value: "Aconchegante e sofisticada" },
   ],
   sequenceHighlights: [
     {
       title: "Apresentacao que chama a atencao logo na chegada",
       description:
-        "O Taiyo se apresenta em Icara como um restaurante de sushi em que o visual da mesa importa: cortes limpos, contraste elegante e pecas que chegam com leitura premium.",
-      stat: "Sushi em Icara",
+        "A proposta destaca um restaurante de sushi em que o visual da mesa importa: cortes limpos, contraste elegante e pecas que chegam com leitura premium.",
+      stat: "Posicionamento premium",
       detailPrimaryLabel: "Destaques da casa",
       detailPrimaryText:
-        "Sushi, opcoes vegetarianas e atmosfera acolhedora aparecem entre os pontos mais consistentes das informacoes publicas do restaurante.",
+        "Sushi, opcoes vegetarianas e atmosfera acolhedora funcionam como base para apresentar os pontos mais fortes da operacao.",
       detailSecondaryLabel: "Melhor escolha para",
       detailSecondaryText:
         "Reservas em casal, encontros especiais e noites em que ambiente e apresentacao pesam tanto quanto o cardapio.",
@@ -35,27 +35,27 @@ export const landingContent = {
     {
       title: "Flexibilidade para reservar, pedir ou levar",
       description:
-        "A operacao publica do Taiyo mostra uma casa preparada tanto para quem quer viver a experiencia no salao quanto para quem prefere entrega ou retirada, sem perder conveniencia.",
+        "A operacao pode ser apresentada como preparada tanto para quem quer viver a experiencia no salao quanto para quem prefere entrega ou retirada, sem perder conveniencia.",
       stat: "Reserva, entrega e leve embora",
       detailPrimaryLabel: "Formatos de atendimento",
       detailPrimaryText:
-        "Reserva, delivery, retirada no local e pagamento por cartao aparecem entre os servicos informados publicamente pela casa.",
+        "Reserva, delivery, retirada no local e pagamento por cartao entram como servicos-chave para orientar a decisao do visitante.",
       detailSecondaryLabel: "Ritmo da noite",
       detailSecondaryText:
-        "O posicionamento segue claramente voltado ao jantar, com operacao noturna e proposta pensada para decisao de reserva.",
+        "O posicionamento segue voltado ao jantar, com operacao noturna e proposta pensada para estimular a reserva.",
       visualLabel: "Cena 02",
     },
     {
       title: "Um destino certo para noites especiais na regiao",
       description:
-        "Com endereco em Icara e avaliacao publica forte, o Taiyo combina bom servico, clima acolhedor e uma faixa de experiencia alinhada a quem busca um jantar mais marcante.",
-      stat: "Ambiente e localizacao",
+        "A narrativa combina bom servico, clima acolhedor e uma faixa de experiencia alinhada a quem busca um jantar mais marcante.",
+      stat: "Ambiente e experiencia",
       detailPrimaryLabel: "Faixa da experiencia",
       detailPrimaryText:
-        "Nas referencias publicas, a casa aparece na faixa de R$ 100 a R$ 200 por pessoa, reforcando um posicionamento premium acessivel.",
+        "Use esta area para destacar ticket medio, proposta premium ou qualquer recorte comercial que faca sentido para a marca final.",
       detailSecondaryLabel: "Reconhecimento",
       detailSecondaryText:
-        "A presenca digital e as avaliacoes publicas sustentam o Taiyo como uma escolha consolidada para sushi em Icara.",
+        "A presenca digital, reputacao e prova social podem sustentar a marca como uma escolha consolidada no mercado local.",
       visualLabel: "Cena 03",
     },
   ],
@@ -132,31 +132,30 @@ export const landingContent = {
   ],
   faq: [
     {
-      question: "Como faco minha reserva?",
+      question: "Como personalizo esta landing?",
       answer:
-        "A forma mais rapida e pelo WhatsApp. O link desta pagina ja abre a conversa pronta para agendamento.",
+        "Edite os textos, contatos, endereco e links de CTA para refletir a operacao final do restaurante.",
     },
     {
-      question: "O Taiyo atende jantares e ocasioes especiais?",
+      question: "Esta estrutura atende jantares e ocasioes especiais?",
       answer:
-        "Sim. A atmosfera da casa e ideal para encontros, comemoracoes e noites em que o ambiente faz parte da experiencia.",
+        "Sim. O tom visual e o texto foram pensados para reservas em casal, comemoracoes e noites em que o ambiente faz parte da experiencia.",
     },
     {
-      question: "Onde o restaurante fica?",
+      question: "Onde inserir endereco e localizacao?",
       answer:
-        "O Taiyo Sushi Lounge esta em Icara, Santa Catarina, com acesso simples para quem busca uma experiencia premium na regiao.",
+        "Use o bloco de contato para atualizar endereco, mapa e horario de funcionamento com os dados da marca final.",
     },
   ],
   contact: {
-    whatsappLabel: "Falar no WhatsApp",
-    whatsappHref:
-      "https://wa.me/5548991120993?text=Ola%2C%20quero%20reservar%20uma%20mesa%20no%20Taiyo%20Sushi%20Lounge.",
-    phone: "(48) 99112-0993",
-    address: "Estrada Linha Tres Ribeiroes ICR-250, 38 - Icara, SC",
-    mapsHref: "https://maps.google.com/?q=Estrada+Linha+Tres+Ribeiroes+ICR-250,+38+-+Icara,+SC",
+    whatsappLabel: "Atualizar contato",
+    whatsappHref: "#contato",
+    phone: "(00) 00000-0000",
+    address: "Atualize com o endereco do restaurante",
+    mapsHref: "#contato",
     hours: [
       "Segunda a Sabado: 18:30 as 23:45",
-      "Domingo: consulte disponibilidade e eventos",
+      "Domingo: ajuste conforme a operacao",
     ],
   },
   heroScene: {
